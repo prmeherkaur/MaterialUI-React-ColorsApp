@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Palette from "./Palette";
 import {Route,Switch} from "react-router-dom";
 import seedColors from "./seedColors";
+import PaletteList from "./PaletteList";
 import { generatePalette } from "./colorHelpers";
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
    
     return (
       <Switch>
-        <Route exact path="/" render={() => <h1>PALETTE LIST GOES HERE</h1>}/>
+        <Route exact path="/" render={() => <PaletteList palettes={seedColors}/>}/>
         <Route exact path="/palette/:id"
         render={routeProps =>(
           <Palette
