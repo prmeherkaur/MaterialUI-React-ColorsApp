@@ -14,10 +14,14 @@ export default {
         flexWrap: "wrap"
       },
       nav: {
+        color: "white",
         display: "flex",
         width: "100%",
         justifyContent: "space-between",
-        color: "white"
+        alignItems:"center",
+        "& a":{
+          color:"white"
+        }
       },
       palettes: {
         boxSizing: "border-box",
