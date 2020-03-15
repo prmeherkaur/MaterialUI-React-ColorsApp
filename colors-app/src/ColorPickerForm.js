@@ -8,17 +8,17 @@ import Button from "@material-ui/core/Button";
 const styles = {
     picker: {
       width: "100% !important",
-      marginTop: "2rem"
+      marginTop: "1rem"
     },
     addColor: {
       width: "100%",
-      padding: "1rem",
-      marginTop: "1rem",
-      fontSize: "2rem"
+      padding: "0.2rem",
+      marginTop: "0.2rem",
+      fontSize: "1rem"
     },
     colorNameInput: {
       width: "100%",
-      height: "70px"
+      height: "10%"
     }
   };
   

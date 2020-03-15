@@ -25,7 +25,7 @@ const styles = theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    height:'100vh'
+    height:"100%"
   },
   drawerPaper: {
     width: drawerWidth,
@@ -58,11 +58,11 @@ const styles = theme => ({
   },
   container: {
     width: "90%",
-    height: "100%",
+    height: "90%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent:"center",
+    alignItems:"center"
   },
   buttons: {
     width: "100%"
@@ -93,13 +93,9 @@ class NewPaletteForm extends Component {
     handleChange(evt){
         this.setState({[evt.target.name]:evt.target.value});
     }
-    handleSubmit(newPaletteName){
-      let newName = newPaletteName;
-      const newPalette = {
-        paletteName: newName,
-        id: newPaletteName.toLowerCase().replace(/ /g, "-"),
-        colors: this.state.colors
-      };
+    handleSubmit(newPalette){
+      newPalette.id=newPalette.paletteName.toLowerCase().replace(/ /g, "-");
+      newPalette.colors = this.state.colors;
       this.props.savePalette(newPalette);
       this.props.history.push("/");
     }
@@ -159,19 +155,21 @@ class NewPaletteForm extends Component {
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={this.handleDrawerClose}>
-              <ChevronLeftIcon />
+            <IconButton fontSize="small" onClick={this.handleDrawerClose}>
+              <ChevronLeftIcon fontSize="small" />
             </IconButton>
           </div>
           <Divider />
           <div className={classes.container}>
-          <Typography variant='h4' gutterBottom>Design Your Palette</Typography>
+          <Typography variant='h4'gutterBottom>
+            Design Your Palette
+          </Typography>
           <div className={classes.buttons}>
-          <Button variant='contained' 
-            color='secondary' 
-            onClick={this.clearColors}
-            className={classes.button}
-          >
+            <Button variant='contained' 
+              color='secondary' 
+              onClick={this.clearColors}
+              className={classes.button}
+            > 
               Clear Palette
             </Button>
             <Button variant='contained' 
