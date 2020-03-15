@@ -36,7 +36,14 @@ class PaletteformNav extends Component{
       }
 
 render(){
-    const { classes, open,palettes,handleSubmit } = this.props;
+    const { 
+      classes, 
+      open,
+      palettes,
+      handleSubmit,
+      handleDrawerOpen 
+    } = this.props;
+    const {formShowing}=this.state;
     return(
     <div className={classes.root}>
     <CssBaseline />
@@ -51,7 +58,7 @@ render(){
             <IconButton
               color='inherit'
               aria-label='Open drawer'
-              onClick={this.props.handleDrawerOpen}
+              onClick={handleDrawerOpen}
               className={classNames(classes.menuButton, { [classes.hide]:open})}
             >
             <AddToPhotosIcon/>
@@ -77,7 +84,7 @@ render(){
             </Button>
             </div>
         </AppBar>
-        {this.state.formShowing && (
+        {formShowing && (
           <PaletteFormDialog palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm} />
         )}
         </div>
