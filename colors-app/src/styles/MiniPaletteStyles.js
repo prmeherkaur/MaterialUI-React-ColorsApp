@@ -24,13 +24,14 @@ export default {
         alignItems: "center",
         margin: "0",
         color: "black",
-        paddingTop: "0.5rem",
+        paddingTop: "0.1rem",
+        paddingBottom:"0.1rem",
         fontSize: "1rem",
         position: "relative"
       },
       emoji: {
-        marginLeft: "0.5rem",
-        fontSize: "1.5rem"
+        marginLeft: "0.4rem",
+        fontSize: "1.2rem"
         },
     miniColor: {
         height: "25%",
