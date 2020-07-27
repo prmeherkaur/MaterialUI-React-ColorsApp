@@ -15,7 +15,7 @@ class MiniPalette extends PureComponent {
     this.props.openDialog(this.props.id);
   }
   handleClick() {
-    this.props.goToPalette(this.props.id);
+    this.props.handleClick(this.props.id);
   }
   render(){
   const {classes,paletteName,emoji,colors}=this.props;
