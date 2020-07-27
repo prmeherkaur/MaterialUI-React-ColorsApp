@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/MaterialUI-React-ColorsApp/static/css/main.2f0bbd55.chunk.css",
+    "main.js": "/MaterialUI-React-ColorsApp/static/js/main.b6c19e5a.chunk.js",
+    "main.js.map": "/MaterialUI-React-ColorsApp/static/js/main.b6c19e5a.chunk.js.map",
+    "runtime-main.js": "/MaterialUI-React-ColorsApp/static/js/runtime-main.b423fded.js",
+    "runtime-main.js.map": "/MaterialUI-React-ColorsApp/static/js/runtime-main.b423fded.js.map",
+    "static/css/2.36bfdc33.chunk.css": "/MaterialUI-React-ColorsApp/static/css/2.36bfdc33.chunk.css",
+    "static/js/2.eb0ce4ed.chunk.js": "/MaterialUI-React-ColorsApp/static/js/2.eb0ce4ed.chunk.js",
+    "static/js/2.eb0ce4ed.chunk.js.map": "/MaterialUI-React-ColorsApp/static/js/2.eb0ce4ed.chunk.js.map",
+    "index.html": "/MaterialUI-React-ColorsApp/index.html",
+    "precache-manifest.2f34a8d81e215e43b9908a6e991df067.js": "/MaterialUI-React-ColorsApp/precache-manifest.2f34a8d81e215e43b9908a6e991df067.js",
+    "service-worker.js": "/MaterialUI-React-ColorsApp/service-worker.js",
+    "static/css/2.36bfdc33.chunk.css.map": "/MaterialUI-React-ColorsApp/static/css/2.36bfdc33.chunk.css.map",
+    "static/css/main.2f0bbd55.chunk.css.map": "/MaterialUI-React-ColorsApp/static/css/main.2f0bbd55.chunk.css.map",
+    "static/js/2.eb0ce4ed.chunk.js.LICENSE": "/MaterialUI-React-ColorsApp/static/js/2.eb0ce4ed.chunk.js.LICENSE",
+    "static/media/bg.svg": "/MaterialUI-React-ColorsApp/static/media/bg.77428cd4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b423fded.js",
+    "static/css/2.36bfdc33.chunk.css",
+    "static/js/2.eb0ce4ed.chunk.js",
+    "static/css/main.2f0bbd55.chunk.css",
+    "static/js/main.b6c19e5a.chunk.js"
+  ]
+}
